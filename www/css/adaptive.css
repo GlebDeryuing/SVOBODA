@@ -1,0 +1,55 @@
+    @media only screen and (max-width:1919px) {
+        h2 {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 800;
+            margin-bottom: 1.5em;
+        }
+        header {
+            width: 90%;
+            margin: auto;
+        }
+        header .main-menu {
+            padding: 2em 0;
+        }
+        header .main-menu .logo {
+            width: 40%;
+        }
+        header .main-menu .logo img {
+            width: 200px;
+        }
+        header .main-menu .menu {
+            width: 60%;
+        }
+        main .sub .image {
+            width: 50%;
+        }
+        main .sub .text-block {
+            width: 50%;
+        }
+        main .sub .image img {
+            width: 400px;
+            border-radius: 30px;
+        }
+        main .trainers .carousel-item img {
+            margin-left: -2%;
+            width: 350px;
+        }
+        main .trainers .carousel-item .first-trainer .text,
+        main .trainers .carousel-item .second-trainer .text {
+            top: 8%;
+            right: -20%;
+            width: 450px;
+        }
+        main .trainers .carousel-item .first-trainer .text h2,
+        main .trainers .carousel-item .second-trainer .text h2 {
+            margin-bottom: 20px;
+        }
+        main .trainers .carousel-item .first-trainer .text li,
+        main .trainers .carousel-item .second-trainer .text li {
+            font-size: 14px;
+        }
+        main .account .card {
+            width: 580px;
+            height: 365px;
+        }
+    }

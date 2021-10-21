@@ -1,0 +1,646 @@
+html {
+    height: 100%;
+}
+
+img {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="number"]:hover,
+input[type="number"]:focus {
+    -moz-appearance: number-input;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    background: #000;
+    scroll-behavior: smooth;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    margin-bottom: 1.5em;
+}
+
+header {
+    width: 90%;
+    margin: auto;
+}
+
+header .main-menu {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    padding: 2em 0;
+}
+
+header .main-menu .logo {
+    width: 50%;
+}
+
+header .main-menu .logo img {
+    width: 240px;
+    height: auto;
+}
+
+header .main-menu .menu {
+    display: flex;
+    width: 50%;
+}
+
+header .main-menu .menu a form button {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+}
+
+header .main-menu .menu a {
+    white-space: nowrap;
+    font-family: 'Raleway', sans-serif;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0.3em 1em;
+    margin: 0 1.5em;
+    height: 34px;
+    font-weight: 400;
+    position: relative;
+    cursor: pointer;
+}
+
+header .main-menu .menu a.selected {
+    font-weight: 600;
+}
+
+header .main-menu .menu .login:hover img {
+    opacity: 0.7;
+}
+
+header .main-menu .menu .login img {
+    opacity: 1;
+    transition: opacity 0.3s;
+    width: 22px;
+    height: 22px;
+    transform: translateY(-2px);
+}
+
+header .main-menu .menu a .under-block {
+    content: " ";
+    height: 4px;
+    width: 4px;
+    border-radius: 10px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    transition: 0.2s left, 0.2s width, 0.2s height;
+}
+
+header .main-menu .menu a.selected .under-block,
+header .main-menu .menu a:hover .under-block {
+    height: 2px;
+    width: calc(100% - 2em);
+    left: 1em;
+}
+
+main {
+    width: 100%;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+main .about {
+    color: #fff;
+    padding: 3em 5% 1.5em 5%;
+    display: flex;
+    background: linear-gradient(to bottom, #000, #212121 93%, #fff 100%);
+}
+
+main .about h2 {
+    margin-bottom: 1.5em;
+}
+
+main .about .text-block {
+    width: 50%;
+    text-align: justify;
+}
+
+.text-block>div {
+    margin-bottom: 3em;
+    font-family: 'Raleway', sans-serif;
+}
+
+main .about .image {
+    width: 50%;
+}
+
+main .about .image img {
+    width: 80%;
+    height: auto;
+    transform: translate3d(16%, -5%, 0);
+}
+
+main .sub {
+    position: relative;
+    background-color: #fff;
+    padding: 3em 5% 5em 5%;
+    display: flex;
+    background: linear-gradient(to bottom, #fff 93%, #000 100%);
+}
+
+main .sub .parallax-card {
+    position: absolute;
+    filter: blur(5px);
+    transition: transform-origin linear 1s;
+    opacity: 0.9;
+}
+
+main .sub #card1 {
+    width: 22%;
+    top: -8em;
+    left: -5em;
+    transform: rotate(10deg);
+}
+
+main .sub #card2 {
+    width: 20%;
+    top: -10em;
+    right: -5em;
+    transform: rotate(20deg);
+}
+
+main .sub #card3 {
+    width: 20%;
+    bottom: 0em;
+    left: -10em;
+    transform: rotate(5deg);
+}
+
+main .sub .image {
+    width: 40%;
+}
+
+main .sub .text-block {
+    width: 60%;
+}
+
+main .sub .text-block p {
+    text-align: justify;
+}
+
+main .sub .text-block .subs {
+    transform: translateX(3%);
+}
+
+main .sub .text-block .subs h5 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+main .sub .text-block .subs .upper {
+    display: flex;
+}
+
+main .sub .text-block .subs .upper h5:first-child {
+    width: 80%;
+}
+
+main .sub .text-block .subs .upper h5:last-child {
+    width: 20%;
+    text-align: right;
+    text-decoration: underline;
+}
+
+main .sub .image {
+    position: relative;
+}
+
+main .sub .image img {
+    width: 470px;
+    height: auto;
+    position: absolute;
+    box-shadow: 5px 5px 10px #000000aa;
+    border-radius: 40px;
+}
+
+main .sub .image img:first-child {
+    left: 10%;
+    top: 38%;
+    transform: rotate(-14deg);
+    transition: transform 0.3s;
+    z-index: 2;
+}
+
+main .sub .image img:last-child {
+    left: 14%;
+    top: 28%;
+    transform: rotate(-10deg);
+    z-index: 1;
+}
+
+main .trainers .carousel-item {
+    color: #fff;
+}
+
+main .trainers .carousel {
+    padding: 2em 0 3em 0;
+    background: linear-gradient(to bottom, #000, #212121 93%, #fff 100%);
+}
+
+main .trainers .carousel-item ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+main .trainers .carousel-item li {
+    list-style-type: none;
+    padding-bottom: 0.3em;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+}
+
+main .trainers .carousel-item img {
+    width: 450px;
+    height: auto;
+}
+
+main .trainers .carousel-item>div>div {
+    display: flex;
+    position: relative;
+    padding-left: 2em;
+}
+
+main .trainers .carousel-item .first-trainer,
+main .trainers .carousel-item .second-trainer {
+    width: 45%;
+}
+
+main .trainers .carousel-item .first-trainer .text,
+main .trainers .carousel-item .second-trainer .text {
+    position: absolute;
+    top: 8%;
+    right: -10%;
+}
+
+main .trainers .carousel-item .first-trainer img,
+main .trainers .carousel-item .second-trainer img {
+    transform: translateX(2%);
+}
+
+main .contacts {
+    background-color: #fff;
+    padding: 3em 5% 5em 5%;
+    padding-bottom: 0.3em;
+}
+
+main .contacts .text-line {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .contacts .text-line .text-block {
+    display: flex;
+}
+
+main .contacts .text-line .text-block .first-text {
+    font-weight: 600;
+    padding: 3px;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+main .contacts .text-line .text-block .second-text {
+    font-size: 18px;
+    padding: 3px;
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+    border: 0;
+    padding: 0;
+    margin-bottom: -1%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 5em 10% 3em 5%;
+    background: linear-gradient(to top, #000, #212121 90%, #fff 100%);
+}
+
+footer .left-block,
+footer .right-block {
+    display: flex;
+    flex-direction: column;
+    width: 25%
+}
+
+footer .left-block .menu-link,
+footer .right-block .menu-link,
+footer .social-media-header {
+    white-space: nowrap;
+    font-family: 'Raleway', sans-serif;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0.3em 1em;
+    margin: 0 1.5em;
+    height: 34px;
+    font-weight: 400;
+    position: relative;
+    transition: opacity 0.3s;
+}
+
+footer .left-block .menu-link:hover,
+footer .right-block .menu-link:hover {
+    opacity: 0.5;
+}
+
+footer .logo {
+    width: 49%;
+    margin: auto;
+}
+
+footer .logo img {
+    display: block;
+    width: 240px;
+    margin: auto;
+    height: auto;
+}
+
+footer .right-block .menu-link img {
+    width: 20px;
+    height: auto;
+    margin-right: 1em;
+    padding-bottom: 0.25em;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal .modal-content {
+    background: linear-gradient(to bottom, #000, #212121 100%);
+    margin: 5% auto 15% auto;
+    width: 40%;
+}
+
+.modal .modal-content .imgcontainer {
+    text-align: center;
+    padding: 5%;
+    position: relative;
+}
+
+.modal .modal-content .imgcontainer h2 {
+    padding-top: 0.5em;
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.modal .modal-content .imgcontainer .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.modal .modal-content .imgcontainer .close:hover {
+    color: red;
+}
+
+.modal .modal-content .imgcontainer img.avatar {
+    width: 20%;
+}
+
+.modal .container {
+    padding: 5%
+}
+
+.modal .container input[type=number],
+.modal .container input[type=text],
+.modal .container input[type=password] {
+    background-color: transparent;
+    color: #fff;
+    width: 100%;
+    padding: 0.3em;
+    margin: 3% 0;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #fff;
+}
+
+.modal .container label,
+.modal .container span {
+    color: #fff;
+    padding-top: 1em;
+}
+
+.modal .container a {
+    cursor: pointer;
+    transition: color 0.3s;
+    color: rgb(180, 255, 60);
+    text-decoration: underline;
+}
+
+.modal .container a:hover {
+    color: rgba(180, 255, 60, 0.7);
+    text-decoration: none;
+}
+
+.modal .container button {
+    z-index: 2;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    padding: 3% 1%;
+    margin: 3% 0;
+    border: 2px #fff solid;
+    cursor: pointer;
+    width: 100%;
+    transition: color 0.3s;
+}
+
+.modal .container button:hover:before {
+    width: 1000px;
+    height: 1000px;
+    top: -470px;
+    left: -160px;
+}
+
+.modal .container button::before {
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    content: ' ';
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    transition: width 0.5s ease-in, height 0.5s ease-in, left 0.5s ease-in, top 0.5s ease-in;
+}
+
+.error-block {
+    bottom: 3em;
+    right: 3em;
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 1em;
+    position: fixed;
+    width: 30%;
+    display: none;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.error-block img.icon {
+    width: 10%;
+    height: auto;
+}
+
+.error-block .info {
+    padding: 1em;
+}
+
+.error-block .info #error-h {
+    font-size: 18px;
+}
+
+.error-block .info #error-p {
+    font-size: 14px;
+}
+
+
+/* user personal account page */
+
+header .main-menu .menu .disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+#acc-main {
+    background: linear-gradient(to bottom, #000, #212121 100%);
+}
+
+main .account {
+    color: #fff;
+    padding: 5em 5% 1.5em 5%;
+    display: flex;
+}
+
+main .account .info {
+    width: 50%;
+}
+
+main .account .info h2.user-name {
+    margin-bottom: 1.5em;
+}
+
+main .account .info .string {
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: rgba(255, 255, 255, 0.05) solid 2px;
+}
+
+main .account .info .string .first-text {
+    width: 40%;
+    font-weight: 500;
+    padding-right: 2em;
+}
+
+main .account .info .string .second-text,
+main .account .info .string .first-text {
+    margin-top: 1em;
+    margin-bottom: 0em;
+    font-size: 20px;
+}
+
+main .account .info button {
+    background-color: #fff;
+    color: #000;
+    padding: 3% 1%;
+    margin: 10% 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+main .account .info button img {
+    height: 24px;
+    margin: auto;
+    width: auto;
+    padding-left: 1em;
+}
+
+main .account .card {
+    margin: auto;
+    margin-top: 3em;
+    transform: rotate(3deg);
+    width: 645px;
+    height: 405px;
+    border-radius: 2em;
+    background-color: #000;
+    box-shadow: 0 0 5em rgba(255, 255, 255, 0.2);
+}
+
+main .account .card .second {
+    margin: auto;
+    width: 70%;
+}
+
+main .account .card .number {
+    text-align: right;
+    font-weight: 600;
+    font-size: 22px;
+    padding: 7%;
+    margin-bottom: -3em;
+}
+
+main .account .card .second img {
+    width: 100%;
+    height: auto;
+}
+
+main .account .card .second p {
+    padding-top: 2%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+}
